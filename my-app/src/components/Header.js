@@ -1,20 +1,20 @@
-import React from 'react';
+import LinkMenu from './LinkMenu';
 
-function header(){
+const Header = ()=>{
     return(
         <div className="header">
-            <div className="container">
+            <div className='container'>
                 <h1>LOGOTIPO</h1>
                 <ul>
+                    <li><LinkMenu href="#">Google</LinkMenu></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a href="https://www.google.com" target="_blank">Link</a></li>
                 </ul>
             </div>
         </div>
     )
 }
 
-export default header;
+export default Header;
